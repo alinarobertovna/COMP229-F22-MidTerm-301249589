@@ -73,7 +73,7 @@ router.post('/details/:id', (req, res, next) => {
 
   let id = req.params.id;
 
-  let updatedBook = new book({
+  let updatedBook = book({
       "_id" : id,
       "Title": req.body.title,
       "Description" : req.body.description,
@@ -110,6 +110,5 @@ router.get('/delete/:id', (req, res, next) => {
       }
   });
 });
-
 
 module.exports = router;
