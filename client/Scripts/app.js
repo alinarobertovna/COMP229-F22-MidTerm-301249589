@@ -108,7 +108,7 @@ $.fn.pageMe = function(opts){
   $(".btn-danger").click(function(event){
     if(!confirm("Are you sure?")) {
       event.preventDefault();
-      window.location.assign("/games");
+      window.location.assign("/books"); // changed it from "/games" to "/books" - Alina Fadeeva #301249589
     }
   });
 

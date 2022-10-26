@@ -6,6 +6,9 @@ let mongoose = require('mongoose');
 // define the book model
 let book = require('../models/books');
 
+// Alina Fadeeva #301249589
+// Added routes
+
 /* GET books List page. READ */
 router.get('/', (req, res, next) => {
   // find all books in the books collection
